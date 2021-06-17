@@ -1,0 +1,166 @@
+/* general */
+* {
+box-sizing: border-box;
+font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #eee;
+    margin:0; 
+}
+
+/* header */
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    margin: 10px;
+    background-color: #eee;
+
+
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-item {
+    margin-right: 50px;
+    align-items: center;
+}
+
+img {
+    height: 40px;
+}
+
+/* email */
+.email-form {
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    font-weight: bolder;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+button {
+    color: black;
+    background-color: #ffdd00;
+    text-decoration: none;
+    border: none;
+    padding: 5px 35px;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
+button:hover, button:active {
+    cursor: pointer;
+    background-color: #ffbb33;
+}
+
+/* features */
+.features-heading, .features-para {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    margin-left: 30%;
+}
+.features-para {
+    margin-bottom: 30px;
+}
+
+.h2-1st {
+    margin-top: 50px;
+}
+
+
+.fas, .fa-fire{
+    position: relative;
+    left: 315px;
+    top: 95px;
+    color: orange;
+    font-size: 40px;
+    z-index: -1;
+
+}
+
+.fa-truck {
+    top: 50px;
+}
+
+.fa-battery-full {
+    top: 50px;
+}
+
+
+/* youtube */
+
+iframe {
+    margin-top: 25px;
+    margin-left: 30%;
+
+}
+
+/* prices */
+
+.prices-container {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container {
+    border: 2px solid gray;
+    margin: 10px;
+    margin-top: 40px;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+
+}
+
+.trombone-name {
+    margin-top: 0;
+    background-color: lightgrey;
+    padding: 40px;
+    font-weight: bolder;
+}
+.trombone-name ~ button {
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+    background: lightgray;
+
+}
+.footer-links {
+    display: flex;
+    margin-left: 76%;
+
+}
+
+.footer-item {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links ~ p {
+    margin: 0;
+    margin-left: 75%;
+    padding-bottom: 10px;
+}
