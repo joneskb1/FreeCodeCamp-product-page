@@ -72,23 +72,25 @@ button:hover, button:active {
 /* features */
 .features-heading, .features-para {
     width: 60%;
-    padding: 0;
-    margin: 0;
-    margin-left: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-left: 25%;
+   
+
 }
 .features-para {
     margin-bottom: 30px;
 }
 
 .h2-1st {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
 .fas, .fa-fire{
     position: relative;
-    left: 315px;
-    top: 95px;
+    left: -60px;
+    top: 50px;
     color: orange;
     font-size: 40px;
     z-index: -1;
@@ -97,18 +99,21 @@ button:hover, button:active {
 
 .fa-truck {
     top: 50px;
+    left: -70px;
 }
 
 .fa-battery-full {
     top: 50px;
+    left: -70px;
 }
 
 
 /* youtube */
 
 iframe {
-    margin-top: 25px;
-    margin-left: 30%;
+ display: block;
+ margin: 0 auto;
+ margin-top: 50px;
 
 }
 
@@ -119,6 +124,7 @@ iframe {
     justify-content: space-around;
     width: 75%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -145,12 +151,11 @@ iframe {
 
 footer {
     background: lightgray;
-
 }
+
 .footer-links {
     display: flex;
     margin-left: 76%;
-
 }
 
 .footer-item {
@@ -164,3 +169,46 @@ footer {
     margin-left: 75%;
     padding-bottom: 10px;
 }
+
+/* media query  */
+
+@media (max-width: 750px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    nav  {
+        margin: 0;
+        justify-content: center;
+
+    }
+
+    .prices-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+    .footer-links {
+        margin: 0 auto;
+    }
+    .footer-item {
+        margin: 0 auto;
+    }
+
+    .footer-links ~ p {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        
+    }
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-right: 75px;
+    }
+} 
